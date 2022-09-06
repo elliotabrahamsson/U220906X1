@@ -27,9 +27,11 @@ build();
 
 function build() {
     const target = document.getElementById('app');
-    const newElement = document.createElement('div');
-    newElement.innerHTML = 'Settings';
-    target.appendChild(newElement);
+    const newElement1 = document.createElement('h1');
+    newElement1.innerHTML = 'Settings';
+    newElement1.setAttribute("id", "setting");
+    target.appendChild(newElement1);
+    
 
     const box = document.getElementById('app');
     const newInput = document.createElement('input');
