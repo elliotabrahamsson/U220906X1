@@ -2,7 +2,11 @@ body{
     background-color: aqua;
 }
 
-.setting {
-    box-shadow: 100px;
-    padding: 100px;
+#setting {
+    border: 2px solid black;    
+}
+
+#Title {
+    border: 2px solid black;    
+
 }

@@ -27,20 +27,21 @@ build();
 
 function build() {
     const target = document.getElementById('app');
-    const newElement1 = document.createElement('h1');
-    newElement1.innerHTML = 'Settings';
-    newElement1.setAttribute("id", "setting");
-    target.appendChild(newElement1);
+    const newSetting = document.createElement('h1');
+    newSetting.innerHTML = 'Settings';
+    newSetting.setAttribute("id", "setting");
+    target.appendChild(newSetting);
     
 
     const box = document.getElementById('app');
     const newInput = document.createElement('input');
     newInput.setAttribute("type", "text");
-    box.appendChild(newInput);
+    newSetting.appendChild(newInput);
 
     const targCalc = document.getElementById('app')
     const newTitle = document.createElement('h1');
     newTitle.innerHTML = 'Calculator';
+    newTitle.setAttribute("id", "Title");
     targCalc.appendChild(newTitle);
 
 }
