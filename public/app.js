@@ -25,23 +25,49 @@ console.log('I am alive!');
 
 build();
 
+
 function build() {
-    const target = document.getElementById('app');
-    const newSetting = document.createElement('h1');
+    const settingsDiv = document.createElement('div');
+    settingsDiv.setAttribute('id', 'Settings');
+    settingsDiv.id = 'kugg';
+    app.appendChild(settingsDiv);
+
+    const newSetting = document.createElement('h2'); 
     newSetting.innerHTML = 'Settings';
     newSetting.setAttribute("id", "setting");
-    target.appendChild(newSetting);
+    settingsDiv.appendChild(newSetting);
+    setting(newSetting);
     
 
-    const box = document.getElementById('app');
     const newInput = document.createElement('input');
     newInput.setAttribute("type", "text");
     newSetting.appendChild(newInput);
 
-    const targCalc = document.getElementById('app')
-    const newTitle = document.createElement('h1');
+    const newTitle = document.createElement('h2');
     newTitle.innerHTML = 'Calculator';
     newTitle.setAttribute("id", "Title");
-    targCalc.appendChild(newTitle);
+    app.appendChild(newTitle);
 
+}
+
+function setting(newSetting) {
+    const newBackground = document.createElement('h1');
+    newBackground.innerHTML = 'Background';
+    newBackground.setAttribute("id", "Background");
+    newSetting.appendChild(newBackground);    
+
+    const newFont =document.createElement('h1');
+    newFont.innerHTML='Fontsize';
+    newFont.setAttribute("id", "Font");
+    newSetting.appendChild(newFont);
+
+    const newDropbtn = document.createElement('div');
+    newDropbtn.setAttribute('id', 'dropbtn');
+    newDropbtn.id='dropbtn';
+    newSetting.appendChild(newDropbtn);
+    
+    const newDroplist = document.createElement('button');
+    newDroplist.setAttribute("id", "droplist");
+    newDroplist.innerHTML = 'Sak1', 'Sak2', 'Sak3';
+    newDropbtn.appendChild(newDroplist);
 }
