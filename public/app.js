@@ -62,12 +62,20 @@ function setting(newSetting) {
     newSetting.appendChild(newFont);
 
     const newDropbtn = document.createElement('div');
-    newDropbtn.setAttribute('id', 'dropbtn');
     newDropbtn.id='dropbtn';
     newSetting.appendChild(newDropbtn);
     
     const newDroplist = document.createElement('button');
     newDroplist.setAttribute("id", "droplist");
-    newDroplist.innerHTML = 'Sak1', 'Sak2', 'Sak3';
+    newDroplist.innerHTML = 'bakgrund';
     newDropbtn.appendChild(newDroplist);
+
+    const divlist = document.createElement('div');
+    divlist.id='listdiv';
+    newDroplist.appendChild(divlist);
+
+    const Backgroundlist = document.createElement('ul');
+    Backgroundlist.innerHtml = 'Grey', 'Blue', 'Yellow';
+    Backgroundlist.id='Backgroundlist';
+    divlist.appendChild(Backgroundlist);
 }
